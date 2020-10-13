@@ -1,0 +1,18 @@
+.toolbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.toolbar__searchBar {
+  margin-right: 30px;
+  flex: 1;
+}
+
+.MuiFormControl-root {
+  flex: 0;
+  min-width: 150px !important;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "atexto-backend",
+  "version": "1.0.0",
+  "description": "FullStack Challenge Atexto Backend",
+  "main": "./src/server.js",
+  "type": "module",
+  "dependencies": {
+    "aws-sdk": "^2.771.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.9",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "author": "Matias Zanan",
+  "license": "ISC"
+}
