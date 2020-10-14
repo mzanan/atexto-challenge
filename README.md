@@ -4,7 +4,7 @@
 
 In the project directory, you can run:
 
-## Backend
+## 👉 Backend
 
 ### `npm install aws-sdk cors dotenv express mongodb mongoose multer`
 
@@ -15,7 +15,7 @@ To run the backend you will need to install the following dependencies "aws-sdk"
 Runs the app in the development mode.<br />
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
-## Frontend
+## 👉 Frontend
 
 ### `npm install react react-dom react-scripts @testing-library/jest-dom @testing-library/react @testing-library/user-event @material-ui/core @material-ui/icons material-ui-search-bar axios`
 
