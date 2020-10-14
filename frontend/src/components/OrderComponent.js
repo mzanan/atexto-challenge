@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import {
-  InputLabel,
   MenuItem,
   FormControl,
   Select,
+  InputLabel,
 } from "@material-ui/core/";
 
-export default function ControlledOpenSelect(props) {
+export default function OrderComponent(props) {
   const [open, setOpen] = useState(false);
 
   const handleClose = () => {
@@ -19,21 +19,18 @@ export default function ControlledOpenSelect(props) {
 
   return (
     <div>
-      <FormControl variant="outlined"  {...props.orderByName}>
-        <InputLabel >Order By</InputLabel>
+      <FormControl variant="outlined" >
+      <InputLabel>Order By</InputLabel>
         <Select
           open={open}
           onClose={handleClose}
           onOpen={handleOpen}
         >
-          <MenuItem value={0} >
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={1} onClick={props.orderByName} >
-            Name
-          </MenuItem>
-          <MenuItem value={2} onClick={props.orderByDate}>
+          <MenuItem value={1} onClick={props.orderByDate}>
             Date
+          </MenuItem>
+          <MenuItem value={2} onClick={props.orderByName} >
+            Name
           </MenuItem>
         </Select>
       </FormControl>

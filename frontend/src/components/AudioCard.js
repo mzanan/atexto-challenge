@@ -1,4 +1,4 @@
-import { Card, CardContent, IconButton, Input } from "@material-ui/core";
+import { Card, CardContent, IconButton, Input, InputLabel } from "@material-ui/core";
 
 import EditIcon from "@material-ui/icons/Edit";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
@@ -33,13 +33,21 @@ function AudioCard(props) {
   return (
     <Card className="card">
       <CardContent>
-        <Input
-          component="h5"
-          variant="h5"
-          value={inputValue}
-          disabled={!editting}
-          onChange={(e) => setInputValue(e.target.value)}
-        />
+        <div className="inputsContainer">
+          <Input
+            component="h5"
+            variant="h5"
+            value={inputValue}
+            disabled={!editting}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
+
+          <InputLabel className="inputsContainer__dateValue">  
+            {
+              (new Date(Date.parse(props.createdAt)).toString()).substr(0,25)
+            }
+          </InputLabel>
+        </div>
 
         <div className="icons">
           <div>

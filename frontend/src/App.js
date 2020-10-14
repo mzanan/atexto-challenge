@@ -70,10 +70,24 @@ function App() {
   };
 
   const orderByName = () => {
-    return console.log("hola");
+    const sortedAudios = audios.sort((a, b) => {
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return  1; }
+      return 0;
+    }); 
+
+    setAudios([...sortedAudios]);
   };
 
-  const orderByDate = () => {};
+  const orderByDate = () => {
+    const sortedAudios = audios.sort((a, b) => {
+      if(a.createdAt < b.createdAt) { return  1; }
+      if(a.createdAt > b.createdAt) { return -1; }
+      return 0;
+    }); 
+
+    setAudios([...sortedAudios]);
+    };
 
   useEffect(() => {
     fetchAudios();

@@ -15,3 +15,12 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.inputsCcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputsContainer__dateValue {
+  margin-top: 20px;
+}
