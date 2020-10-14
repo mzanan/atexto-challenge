@@ -17,9 +17,9 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
 ## 👉 Frontend
 
-### `npm install react react-dom react-scripts @testing-library/jest-dom @testing-library/react @testing-library/user-event @material-ui/core @material-ui/icons material-ui-search-bar axios`
+### `npm install @material-ui/core @material-ui/icons material-ui-search-bar axios`
 
-To run the frontend you will need to install the following dependencies "react", "react-dom", "react-scripts", "@testing-library/jest-dom", "@testing-library/react", "@testing-library/user-event", "@material-ui/core", "@material-ui/icons", "material-ui-search-bar", "axios".
+To run the frontend you will need to install the following dependencies "@material-ui/core", "@material-ui/icons", "material-ui-search-bar", "axios".
 
 ### `npm start`
 
