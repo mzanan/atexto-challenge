@@ -69,19 +69,29 @@ function App() {
     setAudios(filterAudios);
   };
 
+  const orderByName = () => {
+    return console.log("hola");
+  };
+
+  const orderByDate = () => {};
+
   useEffect(() => {
     fetchAudios();
   }, []);
 
   return (
     <div className="container">
-      <NavBar onSearch={ filterItems } />
+      <NavBar
+        onSearch={filterItems}
+        orderByName={orderByName}
+        orderByDate={orderByDate}
+      />
       <div className="container__cards">
         {
           renderItems()
         }
       </div>
-      <RecordButton onSave={ saveFile } />
+      <RecordButton onSave={saveFile} />
     </div>
   );
 }

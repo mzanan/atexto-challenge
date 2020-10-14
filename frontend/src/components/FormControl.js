@@ -17,24 +17,22 @@ export default function ControlledOpenSelect(props) {
     setOpen(true);
   };
 
-
-  const orderByDate = () => {};
-
   return (
     <div>
-      <FormControl variant="outlined">
+      <FormControl variant="outlined"  {...props.orderByName}>
         <InputLabel >Order By</InputLabel>
         <Select
-          labelId="demo-controlled-open-select-label"
-          id="demo-controlled-open-select"
           open={open}
           onClose={handleClose}
           onOpen={handleOpen}
         >
-          <MenuItem value={1} onClick={props.orderByName}>
+          <MenuItem value={0} >
+            <em>None</em>
+          </MenuItem>
+          <MenuItem value={1} onClick={props.orderByName} >
             Name
           </MenuItem>
-          <MenuItem value={2} onClick={orderByDate}>
+          <MenuItem value={2} onClick={props.orderByDate}>
             Date
           </MenuItem>
         </Select>

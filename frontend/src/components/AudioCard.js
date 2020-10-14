@@ -18,14 +18,10 @@ function AudioCard(props) {
   };
 
   const save = async () => {
-    const formData = new FormData();
-    formData.append("name", inputValue);
-    await axios.put(`/audios/${props._id}`, formData);
+    await axios.put(`/audios/${props._id}`, { name: inputValue });
     props.onUpdate(props._id, inputValue);
 
     setEditting(false);
-
-    console.log(formData);
   };
 
   const remove = async () => {
@@ -46,7 +42,7 @@ function AudioCard(props) {
         />
 
         <div className="icons">
-          <div className="icons__leftIcon">
+          <div>
             <IconButton
               style={{ display: editting ? "block" : "none" }}
               onClick={save}
@@ -55,7 +51,7 @@ function AudioCard(props) {
             </IconButton>
           </div>
 
-          <div className="icons__rightIcons">
+          <div>
             <IconButton onClick={toggleEditing}>
               <EditIcon />
             </IconButton>

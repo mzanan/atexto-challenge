@@ -8,12 +8,15 @@ import FormControl from "./FormControl";
 function NavBar(props) {
   return (
     <div>
-      <AppBar>
+      <AppBar >
         <Toolbar className="toolbar">
-            <div className="toolbar__container">
-              <SearchBar className="toolbar__searchBar" onChange={props.onSearch} />
-              <FormControl />
-            </div>
+          <div className="toolbar__container">
+            <SearchBar
+              className="toolbar__searchBar"
+              onChange={props.onSearch}
+            />
+            <FormControl />
+          </div>
         </Toolbar>
       </AppBar>
     </div>
