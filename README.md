@@ -6,9 +6,7 @@ In the project directory, you can run:
 
 ## 👉 Backend
 
-### `npm install aws-sdk cors dotenv express mongodb mongoose multer`
-
-To run the backend you will need to install the following dependencies "aws-sdk", "cors", "dotenv", "express", "mongodb", "mongoose", "multer".
+### `npm install`
 
 ### `npm start`
 
@@ -17,9 +15,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
 ## 👉 Frontend
 
-### `npm install @material-ui/core @material-ui/icons material-ui-search-bar axios`
-
-To run the frontend you will need to install the following dependencies "@material-ui/core", "@material-ui/icons", "material-ui-search-bar", "axios".
+### `npm install`
 
 ### `npm start`
 
